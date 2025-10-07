@@ -2,7 +2,7 @@
 
 Une API REST complète construite avec **Hono**, **TypeScriptLe serveur sera accessible sur `http://localhost:3000`
 
-## 🌱 Données de Test (Seeders)
+##  Données de Test (Seeders)
 
 L'API dispose d'un seeder unifié pour peupler la base de données avec des données de test.
 
@@ -45,9 +45,9 @@ npm run dev
 # Utilisez les comptes : john.doe@example.com / password123
 ```
 
-## 📚 API Documentation et **MySQL** pour une application Todo List avec authentification JWT.
+##  API Documentation et **MySQL** pour une application Todo List avec authentification JWT.
 
-## 🚀 Fonctionnalités
+##  Fonctionnalités
 
 ### Authentification
 - ✅ Inscription utilisateur avec validation email/mot de passe
@@ -67,7 +67,7 @@ npm run dev
 - ✅ Validation des champs avec **Zod**
 - ✅ Gestion des erreurs détaillée
 
-## 📋 Prérequis
+##  Prérequis
 
 - Node.js >= 18
 - MySQL >= 8.0
@@ -112,13 +112,11 @@ npm run seed
 ### 3. Démarrer le serveur
 
 ```bash
-# Mode développement (avec rechargement automatique)
+# Mode développement (avec rechargement automatique) pour executer le project
+npx tsc --noEmit
 npm run dev
 
-# Mode production
-npm run build
-npm start
-```
+
 
 Le serveur sera accessible sur `http://localhost:3000`
 
@@ -212,7 +210,7 @@ Modifier une tâche existante.
 #### `DELETE /todos/:id`
 Supprimer une tâche.
 
-## 🧪 Tests avec Postman
+##  Tests avec Postman
 
 1. **Importer la collection :**
    - Ouvrir Postman
@@ -270,7 +268,7 @@ hono-todo/
 └─ .env                   # Variables d'environnement
 ```
 
-## 🔒 Sécurité implémentée
+##  Sécurité implémentée
 
 - **Hachage des mots de passe** avec bcrypt (salt rounds: 12)
 - **JWT en http-only cookies** pour éviter les attaques XSS  
@@ -278,27 +276,10 @@ hono-todo/
 - **Autorisation par utilisateur** : chaque utilisateur ne peut accéder qu'à ses propres tâches
 - **Gestion des erreurs** détaillée sans exposition d'informations sensibles
 
-## 🚀 Commandes utiles
+##  Commandes utiles
 
 ```bash
-# Développement
-npm run dev                 # Démarrer en mode dev avec rechargement auto
 
-# Base de données  
-npm run db:generate        # Générer le client Prisma
-npm run db:push           # Synchroniser le schéma avec la DB
-npm run db:migrate        # Créer une migration
-npm run db:studio         # Ouvrir Prisma Studio (interface graphique)
-
-# Seeders (Données de test)
-npm run seed              # Seed complet (utilisateurs + todos)
-npm run seed:users        # Seed uniquement les utilisateurs
-npm run seed:todos        # Seed uniquement les todos
-npm run seed:clean        # Nettoyer toute la base de données
-
-# Production
-npm run build             # Construire l'application
-npm start                 # Démarrer en mode production
 ```
 
 ##  Notes importantes
@@ -309,4 +290,4 @@ npm start                 # Démarrer en mode production
 4. **Pagination :** La limite maximale est de 50 tâches par page
 5. **CORS :** Ajoutez la configuration CORS si nécessaire pour le frontend
 
-L'API est maintenant prête à être utilisée ! 🎉# TOdOLISTE-banckend-HONO
+L'API est maintenant prête à être utilisée ! # TOdOLISTE-banckend-HONO
