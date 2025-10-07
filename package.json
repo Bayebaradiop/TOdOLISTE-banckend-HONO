@@ -1,0 +1,44 @@
+{
+  "name": "hono-todo-api",
+  "version": "1.0.0",
+  "description": "Todo API built with Hono, TypeScript, and MySQL",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "seed": "tsx src/seeders/index.ts",
+    "seed:users": "tsx src/seeders/index.ts users",
+    "seed:todos": "tsx src/seeders/index.ts todos",
+    "seed:clean": "tsx src/seeders/index.ts clean"
+  },
+  "keywords": [
+    "hono",
+    "typescript",
+    "todo",
+    "api",
+    "mysql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/node-server": "^1.19.5",
+    "@prisma/client": "^6.16.3",
+    "bcrypt": "^5.1.1",
+    "hono": "^4.6.12",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.6",
+    "prisma": "^6.16.3",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
